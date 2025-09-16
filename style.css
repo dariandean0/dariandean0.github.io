@@ -476,6 +476,79 @@ section h2::after {
   margin-top: 3rem;
 }
 
+/* Honors Section */
+.honors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.honor-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.honor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.honor-icon {
+  font-size: 3rem;
+  color: var(--primary-green);
+  margin-bottom: 2rem;
+}
+
+.honor-card h3 {
+  font-size: 2rem;
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+}
+
+.honor-date {
+  font-size: 1.4rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.honor-card p {
+  font-size: 1.6rem;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+}
+
+.verify-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-green);
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.verify-link:hover {
+  color: var(--primary-dark);
+}
+
+.verify-link i {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .honors-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
 /* Education Section */
 .education-card {
   background: white;
@@ -570,64 +643,4 @@ section h2::after {
   background: #f0fdf4;
 }
 
-/* Projects Section */
-.projects {
-  background: #f0f4f9;
-  border-top: 1px solid #ddd;
-}
 
-.project-card {
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  max-width: 700px;
-  margin: 1.5rem auto;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-.project-card h3 {
-  margin-bottom: 1rem;
-}
-
-.project-card a {
-  display: inline-block;
-  margin: 0.5rem;
-  padding: 0.6rem 1.2rem;
-  background: #2E8B57;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease, transform 0.2s;
-}
-
-.project-card a:hover {
-  background: #1A1A40;
-  transform: scale(1.05);
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 2rem;
-  background: #1A1A40;
-  color: white;
-}
-
-footer a {
-  color: #2E8B57;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-footer a:hover {
-  color: #00ff99;
-}
