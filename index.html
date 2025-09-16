@@ -10,55 +10,229 @@
 <body>
   <!-- Header -->
   <header class="hero">
-    <h1>Darian Dean</h1>
-    <p>Computer Science Student | Aspiring Software Engineer</p>
-    <div class="links">
-      <a href="mailto:darian.aidan@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/dariandean/" target="_blank">LinkedIn</a>
-      <a href="https://github.com/YOUR_GITHUB" target="_blank">GitHub</a>
+    <div class="hero-content" data-aos="fade-down">
+      <h1>Darian Dean</h1>
+      <p>Computer Science Student | Aspiring Software Engineer</p>
+      <div class="links">
+        <a href="mailto:darian.aidan@gmail.com" class="btn-primary"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://www.linkedin.com/in/dariandean/" target="_blank" class="btn-primary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/dariandean0" target="_blank" class="btn-primary"><i class="fab fa-github"></i> GitHub</a>
+      </div>
     </div>
   </header>
 
   <!-- About -->
   <section class="about" data-aos="fade-up">
-    <h2>About Me</h2>
-    <p>Dedicated Computer Science student with skills in Java, Python, and C++. 
-       Experienced in algorithms, Git/GitHub, and tutoring. 
-       Adaptable and resilient, seeking opportunities to contribute and grow.</p>
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a dedicated Computer Science student with skills in Java, Python, C++, and a foundation in C programming. 
+      Working Knowledge of Data Structures and Algorithms. Experienced with Git, GitHub, and basic Linux commands. As a military 
+      dependent, I bring adaptability and resilience to problem-solving and teamwork. Seeking an opportunity to leverage my technical skills 
+      and life experiences in a dynamic environment.</p>
+      <div class="resume-links">
+        <a href="./documents/Dean Darian Resume 2025 (General).pdf" class="btn-primary" target="_blank">
+          <i class="fas fa-file-pdf"></i> View Resume (General)
+        </a>
+        <a href="./documents/Dean Darian Resume 2025 (Internship).pdf" class="btn-primary" target="_blank">
+          <i class="fas fa-file-pdf"></i> View Resume (Internship)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="education" data-aos="fade-up">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="education-card">
+        <h3>Florida Institute of Technology</h3>
+        <p class="degree">Bachelor of Science in Computer Science</p>
+        <p class="date">Expected Graduation: May 2026</p>
+        <div class="education-details">
+          <h4>Relevant Coursework:</h4>
+          <ul>
+            <li>Data Structures and Algorithms</li>
+            <li>Programming Language Concepts</li>
+            <li>Software Engineering</li>
+            <li>Computer Networks</li>
+            <li>Database Systems</li>
+            <li>Operating Systems</li>
+            <li>Computer Architecture and Assembly</li>
+            <li>Formal Language and Automata Theory</li>
+            <li>Intro to Artificial Intelligence (In Progress)</li>
+            <li>Analysis of Algorithms (In Progress)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Skills -->
   <section class="skills" data-aos="fade-right">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li>Java, Python, C++, C</li>
-      <li>Data Structures & Algorithms</li>
-      <li>Linux, Git, GitHub, Jira</li>
-      <li>Unit Testing, Debugging</li>
-    </ul>
+    <div class="container">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <ul>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>C</li>
+            <li>MASM32</li>
+            <li>Rust</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Web & Mobile</h3>
+          <ul>
+            <li>HTML/CSS</li>
+            <li>JavaScript/TypeScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Android Development</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Developer Tools</h3>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>SQL & MySQL</li>
+            <li>Linux/Unix</li>
+            <li>VS Code</li>
+            <li>Jira</li>
+            <li>Docker</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Core Competencies</h3>
+          <ul>
+            <li>Data Structures</li>
+            <li>Algorithms</li>
+            <li>OOP Principles</li>
+            <li>System Design</li>
+            <li>Computer Networks</li>
+            <li>Agile/Scrum</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Projects -->
   <section class="projects" data-aos="fade-left">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Project Name</h3>
-      <p>Short description of what the project does.</p>
-      <a href="https://github.com/YOUR_REPO" target="_blank">GitHub</a>
-      <a href="projects/project1.html">Learn More</a>
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card" data-aos="zoom-in">
+          <div class="project-content">
+            <h3>Plate Vision</h3>
+            <p>A web application that detects and recognizes license plates from images using YOLOv5 for object detection 
+              and Tesseract OCR for text recognition. Features real-time processing and a user-friendly interface.</p>
+            <div class="tech-stack">
+              <span>Python</span>
+              <span>YOLOv5</span>
+              <span>Tesseract</span>
+              <span>OpenCV</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/dariandean0/plate-vision" target="_blank" class="btn-github">
+                <i class="fab fa-github"></i> View Code
+              </a>
+              <a href="./pages/projects/plate-vision.html" class="btn-demo">
+                <i class="fas fa-external-link-alt"></i> Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="experience" data-aos="fade-up">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="experience-item" data-aos="fade-right">
+          <div class="experience-header">
+            <h3>Passenger Service Agent</h3>
+            <span class="company">Menzies Aviation</span>
+            <span class="date">June 2025 - Present</span>
+          </div>
+          <p>As a Passenger Service Agent with Menzies Aviation, I provide check-in, baggage handling, 
+            and boarding services for international TUI flights at Melbourne Orlando International Airport (MLB). 
+            Support passengers with travel questions, ensure smooth flight operations, and coordinate with airport 
+            staff to maintain efficient and safe ground handling.</p>
+          <ul class="experience-highlights">
+            <li>Process over 150 passengers daily, ensuring accurate passenger manifests and baggage tracking</li>
+            <li>Coordinate with multiple airline partners to handle irregular operations and flight delays</li>
+            <li>Maintain high on-time departure rate through efficient boarding and ground handling processes</li>
+            <li>Help train new team members on safety protocols, system usage, and customer service best practices</li>
+          </ul>
+        </div>
+
+        <div class="experience-item" data-aos="fade-left">
+          <div class="experience-header">
+            <h3>Computer Science Help Desk Tutor</h3>
+            <span class="company">Florida Institute of Technology</span>
+            <span class="date">August 2024 - May 2025</span>
+          </div>
+          <p>As a Help Desk Tutor, I assist students with computer science coursework, providing guidance on programming concepts, 
+            debugging techniques, and study strategies. Focus on building student confidence and problem-solving skills.</p>
+          <div class="experience-details">
+            <h4>Key Points:</h4>
+            <ul class="experience-highlights">
+              <li>Mentor students across various computer science courses</li>
+              <li>Developed supplementary learning materials for complex topics in data structures and algorithms</li>
+              <li>Conducted tutoring sessions on:</li>
+              <ul class="topics-list">
+                <li>Discret Math</li>
+                <li>Programming Language Concepts</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Python Programming</li>
+                <li>Fundamentals of Software Development</li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Contact -->
   <footer data-aos="fade-up">
-    <p>Connect with me:</p>
-    <a href="mailto:darian.aidan@gmail.com">Email</a> | 
-    <a href="https://www.linkedin.com/in/dariandean/" target="_blank">LinkedIn</a>
+    <div class="container">
+      <h2>Let's Connect</h2>
+      <div class="social-links">
+        <a href="mailto:darian.aidan@gmail.com" class="social-link">
+          <i class="fas fa-envelope"></i>
+          <span>Email</span>
+        </a>
+        <a href="https://www.linkedin.com/in/dariandean/" target="_blank" class="social-link">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/dariandean0" target="_blank" class="social-link">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
+      <p class="copyright">© 2025 Darian Dean. All rights reserved.</p>
+    </div>
   </footer>
 
+  <!-- Scripts -->
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      duration: 800,
+      offset: 100,
+      once: true
+    });
   </script>
 </body>
 </html>
