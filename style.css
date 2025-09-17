@@ -116,6 +116,18 @@ body {
   box-shadow: var(--shadow-md);
 }
 
+.icon { 
+   width: 1.8rem; 
+   height: 1.8rem; 
+   display: inline-block; 
+   vertical-align: middle; 
+}
+.btn-primary { 
+   display: inline-flex; 
+   align-items: center; 
+   gap: 1rem; 
+}
+
 /* Section Styling */
 section {
   padding: var(--section-spacing) 0;
@@ -144,6 +156,7 @@ section h2::after {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 3rem;
   margin-top: 4rem;
+  justify-items: center;
 }
 
 .skill-category {
@@ -157,6 +170,10 @@ section h2::after {
 .skill-category:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-md);
+}
+
+.skill-category:nth-child(4) {
+  grid-column: 2; 
 }
 
 .skill-category h3 {
@@ -476,6 +493,17 @@ section h2::after {
   margin-top: 3rem;
 }
 
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  /*margin: 2rem auto;*/
+  margin: 0 auto 2rem;
+  display: block;
+  box-shadow: var(--shadow-md);
+}
+
 /* Honors Section */
 .honors-grid {
   display: grid;
@@ -556,7 +584,7 @@ section h2::after {
   padding: 3rem;
   box-shadow: var(--shadow-sm);
   max-width: 80rem;
-  margin: 0 auto;
+  margin: 2rem auto;
   transition: var(--transition);
 }
 
